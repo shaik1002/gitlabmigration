@@ -1,7 +1,9 @@
-stages:
-    - build
+image: gradle:latest
 
-build-java-project:
-    stage: build
-    script:
-        - gradle build
+stages:
+  - build
+
+build:
+  stage: build
+  script:
+    - gradle build
